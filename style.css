@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'kubo';
+    src: url('./fonts/kubo.ttf') format('truetype');
+}
+body{
+    background: #919191;
+    background: linear-gradient(0deg, rgba(145, 145, 145, 1) 0%, rgba(48, 48, 48, 1) 50%);    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* BUTTONS */
+.btns-header{
+    height:100px;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+.btns-header button{
+    height: 100%;
+    width: 150px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: #9e9e9e;
+    
+}
+.btns-header button:hover{
+    background-color: #7a7676;
+}
+.mc-btn{
+    background-color: #34db6c;
+}
+.raspi-btn{
+    background-color: #e74c3c;
+}
+
+/* LOGO */
+.logo{
+    font-family: 'kubo';
+    font-size: 100px;
+}
+.raspi{
+    color: #e74c3c;
+}
+.mc{
+    color: #34db6c;
+}
