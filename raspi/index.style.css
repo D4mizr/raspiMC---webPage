@@ -1,3 +1,6 @@
+.content {
+    display: flex;
+}
 /* FONDOS DE BOTONES */
 .raspi-btn {
     background-color: #d14747;
@@ -9,4 +12,62 @@
 
 .sidebar .raspi-start{
     background-color: #d14747;
+}
+
+.ip {
+    font-size: 20px;
+    margin-top: 145%;
+    color: white;
+}
+
+.wifi-stats h2{
+    margin-top: 20px;
+
+}
+
+.stat {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.progress {
+    width: 100%;
+    height: 12px;
+    background: #3f3f3f;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.fill {
+    width: 0%;
+    height: 100%;
+    background: #2ecc71;
+    transition: width .4s ease;
+}
+
+.sys-stats {
+    margin-right: 120px;
+    margin-left: 30px;
+}
+
+
+
+#dot::before{
+    content: "●";
+    margin-right: 6px;
+}
+
+.online::before{
+    color: #22c55e;
+}
+
+.offline::before{
+    color: #ef4444;
 }

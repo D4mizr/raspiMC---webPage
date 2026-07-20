@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/template.css">
     <link rel="stylesheet" href="./index.style.css">
+    <script src="../scripts/ip.js" defer></script>
     <script src="../scripts/buttons.js" defer></script>
-    <title>RaspiMC - MC</title>
+    <script src="./index.script.js" defer></script>
+    <title>RaspiMC - Raspi</title>
 </head>
 <body>
     <div class="header">
@@ -22,10 +24,41 @@
         <nav class="sidebar">
             <button class="raspi-start" id="raspi-start">Inicio</button>
             <button class="raspi-config" id="raspi-config">Configuración</button>
+            <span class="ip" id="ip">Cargando...</span>
         </nav>
+
         <div class="content">
-            <h1>Bienvenido a RaspiMC</h1>
-            <p>Esta es la página de inicio de RaspiMC. Aquí puedes encontrar información sobre cómo configurar y administrar tu servidor de Minecraft en una Raspberry Pi.</p>
+            <div class="sys-stats">
+                <div class="title">
+                    <h1>Estado</h1>
+                </div>
+                <div class="stat">
+                    <div class="info">
+                        <span>CPU</span>
+                        <span id="cpu-text">0%</span>
+                    </div>
+                    <div class="progress">
+                        <div id="cpu-bar" class="fill"></div>
+                    </div>
+                </div>
+                <div class="stat">
+                    <div class="info">
+                        <span>RAM</span>
+                        <span id="ram-text">0%</span>
+                    </div>
+                    <div class="progress">
+                        <div id="ram-bar" class="fill"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="wifi-stats">
+                <h1>Wifi Status</h1>
+                <span id="dot"></span>
+                <span class="wifi-status" id="wifi-status">Cargando...</span>
+                <h2>Local WiFi</h2>
+                <span class="hostpotSSID" id="hostpotSSID">Cargando...</span> <br>
+                <span class="hostpotPSW" id="hostpotPSW">Cargando...</span> <br>
+            </div>
         </div>
     </div>
 </body>
